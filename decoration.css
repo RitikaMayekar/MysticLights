@@ -1,0 +1,160 @@
+.container{
+    overflow: hidden;
+    position: relative;
+}
+.wire{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: -5%;
+    margin-top: -6%;
+    width: 40vh;
+    height: 18vh;
+    border-radius: 50%;
+    z-index: 10;
+    display: flex;
+    gap: 15px;
+    rotate: -15deg;
+    border: 2px solid rgb(126, 125, 125);
+    align-items: flex-end;
+    justify-content: center;
+}
+.w2{
+    rotate: 0deg;
+    margin-top: -12%;
+    margin-left: 28%;
+}
+.w3{
+    height: 20vh;
+    width: 50vh;
+    rotate: 8deg;
+    margin-top: -8%;
+    left: unset;
+    right: -30px;
+}
+.circle{
+    position: relative;
+    height: 10px;
+    aspect-ratio: 1;
+    margin-left: 5%;
+
+    background-color: goldenrod;
+    box-shadow: 0 0 10px 1px orange;
+    border-radius: 50%;
+    bottom: -8px;
+
+    /* For Single Colour : Golden */
+    /* animation-name: lights1;  */
+
+    /* For Multiple Colours */
+    animation-name: lights2;
+
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+.c0{
+    bottom: 20px;
+}
+.c1{
+    bottom: 15px;
+}
+.c2{
+    bottom: 11px;
+   animation-delay: 1.2s;
+}
+.c3{
+   animation-delay: 1.5s;
+}
+.c4{
+    bottom: 1px;
+   animation-delay: 1.8s;
+}
+.c5{
+    bottom: -11px;
+   animation-delay: 2s;
+}
+.c6{
+    bottom: 5px;
+   animation-delay: 2.3s;
+}
+.c7{
+    bottom: 6px;
+   animation-delay: 2.6s;
+}
+.c8{
+    bottom: 39px;
+   animation-delay: 2.9s;
+}
+
+
+/* For a Single colour */
+
+@keyframes lights1{
+    0%{
+        scale: 1;
+    }
+    50%{
+        scale: 1.5;
+    }
+    100%{
+        scale: 1.2;
+    }
+}
+
+/* For Multiple Colour Lights */
+
+@keyframes lights2{
+    0%{
+        scale: 1;
+    }
+    10%{
+        scale: 1;
+        background-color: red;
+    }
+    20%{
+        scale: 1;
+        background-color: blue;
+    }
+    30%{
+        scale: 1;
+        background-color: aqua;
+    }
+    40%{
+        scale: 1;
+        background-color: purple;
+    }
+    50%{
+        scale: 1.5;
+        background-color: pink;
+    }
+    60%{
+        scale: 1.5;
+        background-color: coral;
+    }
+    70%{
+        scale: 1.5;
+        background-color: greenyellow;
+    }
+    80%{
+        scale: 1.5;
+        background-color: green;
+    }
+    90%{
+        scale: 1.5;
+        background-color: crimson;
+    }
+    100%{
+        scale: 1.2;
+        background-color: orange;
+    }
+}
+
+/* For making star lights */
+
+/* .wire .circle{
+    border-radius: 0;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+
+} */
